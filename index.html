@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 20</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="heading">Rock, Paper and Scissors Game</div>
+    <br>
+    <h2 class="subhead">Press the Button of your choice</h2>
+    <br>
+
+    <div class="row outputContainer d-flex flex-wrap" >
+        <div class="col-sm-5 outputStyle">
+            <h2>You:</h2>
+            <h2 id="yourChoice">
+                <!-- <i class="fa-solid fa-hill-rockslide"></i> -->
+            </h2>
+            <br>
+            <h2 id="yourResult" class="pt-20">
+                <!-- Winner -->
+            </h2>
+        </div>
+        <div class="col-sm-2 vs">
+            <h3 class="vs">VS</h3>
+        </div>
+        <div class="col-sm-5 outputStyle">
+            <h2>Computer:</h2>
+            <h2 id="computerChoice">
+
+            </h2>
+            <br>
+            <h2 id="computerResult" class="pt-20">
+
+            </h2>
+        </div>
+    </div>
+ 
+    <br><br>
+    <div class="buttonSelection">
+    <button class="rockButton allButtons" onclick = game.theGame(0)>Rock</button>
+    <button class="paperButton allButtons" onclick = game.theGame(1)>Paper</button>
+    <button class="scissorButton allButtons" onclick = game.theGame(2)>Scissors</button>
+    <button class="resetButton allButtons" onclick = location.reload(true)>Reset</button>
+    </div>
+   
+ 
+</body>
+<script src = "main.js"></script>
+</html>
